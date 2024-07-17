@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Bootstrap</title>
+    <link rel="stylesheet" href="./lib/bootstrap.min.css">
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+    <header class="sticky-top" id="cabecalho">
+        <div class="navbar navbar-expand-lg">
+            <div class="container">
+                <h1>GameX</h1>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <nav class="collapse navbar-collapse justify-content-end" id="menu">
+                    <ul class="nav navbar-nav nav-pills">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#Games">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#comprar">Produtos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contato">Contato</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div id="carousel-boot" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div data-bs-interval="4000" class="carousel-item active">
+                <img src="https://via.placeholder.com/1000x500" class="d-block w-100" alt="Imagem 1">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2>Jogo 1</h2>
+                    <p>algum jogo aleatório.</p>
+                </div>
+            </div>
+            <div data-bs-interval="4000" class="carousel-item">
+                <img src="https://via.placeholder.com/1000x500" class="d-block w-100" alt="Imagem 2">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2>Jogo 2</h2>
+                    <p>outro jogo aleatório.</p>
+                </div>
+            </div>
+            <div data-bs-interval="4000" class="carousel-item">
+                <img src="https://via.placeholder.com/1000x500" class="d-block w-100" alt="Imagem 3">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2>Jogo 3</h2>
+                    <p>mais um jogo aleatório.</p>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carousel-boot" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#carousel-boot" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#carousel-boot" data-bs-slide-to="2"></button>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carousel-boot" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carousel-boot" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Próximo</span>
+        </button>
+    </div>
+
+    <section data-bs-spy="scroll" data-bs-target="#cabecalho" id="Games">
+        <div class="container">
+            <h2>Sobre a GameX</h2>
+            <div class="sec">
+                <img src="./images/sonic-x-shadow-generations-mobile-01-en-23may24.webp" alt="">
+                <div class="conjunto">
+                    <h3>GameX</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus distinctio ipsa optio repudiandae numquam tempore omnis, aut nulla. Sed minima hic adipisci fugit alias consequatur harum rem repudiandae optio? Ab!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section data-bs-spy="scroll" data-bs-target="#cabecalho" id="comprar">
+        <div class="container">
+            <div class="row">
+                <h2>Jogos - Nintendo</h2>
+                <div class="col-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <strong>Jogos disponiveis - Para Nintendo Switch</strong>
+                        </div>
+                        <img src="./images/29123551cb3b96ad47.webp" alt="">
+                        <div class="card-body">
+                            <h3>DragonBall Xenoverse</h3>
+                            <p>Lorem ipsum dolor sit, Lorem ipsum dolor sit amet cons fdfdfcipit laboriosam ut voluptate?amet consectetur adipisicing elit. Assumenda deleniti aliquid possimus molestiae ipsum. Perspiciatis, placeat, aspernatur tempora reprehenderit omnis dolorum ipsum numquam ducimus quos voluptatibus magnam, fuga repudiandae cumque.</p>
+                            <del>R$400,00</del>
+                            <strong>R$100,00 a vista</strong>
+                            <button class="btn btn-primary" type="button">comprar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <strong>Jogos disponiveis - Para Nintendo Switch</strong>
+                        </div>
+                        <img src="./images/613aVcNKViL.webp" alt="">
+                        <div class="card-body">
+                            <h3>SuperSmashBros - Ultimate</h3>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda deleniti aliquid possimus molestiae ipsum. Perspiciatis, placeat, aspernatur tempora reprehenderit omnis dolorum ipsum numquam ducimus quos voluptatibus magnam, fuga repudiandae cumque.</p>
+                            <del>R$400,00</del>
+                            <strong>R$100,00 a vista</strong>
+                            <button class="btn btn-primary" type="button">comprar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <strong>Jogos disponiveis - Para Nintendo Switch</strong>
+                        </div>
+                        <img src="./images/618cr+yHRVL.webp" alt="">
+                        <div class="card-body">
+                            <h3>SuperMarioBros - Wonder</h3>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda deleniti aliquid possimus molestiae ipsum. Perspiciatis, placeat, aspernatur tempora reprehenderit omnis dolorum ipsum numquam ducimus quos voluptatibus magnam, fuga repudiandae cumque.</p>
+                            <del>R$400,00</del>
+                            <strong>R$100,00 a vista</strong>
+                            <button class="btn btn-primary" type="button">comprar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <strong>Jogos disponiveis - Para Nintendo Switch</strong>
+                        </div>
+                        <img src="./images/61RbU6HzyhL.webp" alt="">
+                        <div class="card-body">
+                            <h3>Super Mario 3D</h3>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda deleniti aliquid possimus molestiae ipsum. Perspiciatis, placeat, aspernatur tempora reprehenderit omnis dolorum ipsum numquam ducimus quos voluptatibus magnam, fuga repudiandae cumque.</p>
+                            <del>R$400,00</del>
+                            <strong>R$100,00 a vista</strong>
+                            <button class="btn btn-primary" type="button">comprar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <strong>Jogos disponiveis - Para Nintendo Switch</strong>
+                        </div>
+                        <img src="./images/71Hlbr-w6JL.webp" alt="">
+                        <div class="card-body">
+                            <h3>Mario Strikers</h3>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda deleniti aliquid possimus molestiae ipsum. Perspiciatis, placeat, aspernatur tempora reprehenderit omnis dolorum ipsum numquam ducimus quos voluptatibus magnam, fuga repudiandae cumque.</p>
+                            <del>R$400,00</del>
+                            <strong>R$100,00 a vista</strong>
+                            <button class="btn btn-primary" type="button">comprar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <strong>Jogos disponiveis - Para Nintendo Switch</strong>
+                        </div>
+                        <img src="./images/e0fc49c2b0.webp" alt="">
+                        <div class="card-body">
+                            <h3>Super Mario Maker</h3>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda deleniti aliquid possimus molestiae ipsum. Perspiciatis, placeat, aspernatur tempora reprehenderit omnis dolorum ipsum numquam ducimus quos voluptatibus magnam, fuga repudiandae cumque.</p>
+                            <del>R$400,00</del>
+                            <strong>R$100,00 a vista</strong>
+                            <button class="btn btn-primary" type="button">comprar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <strong>Jogos disponiveis - Para Nintendo Switch</strong>
+                        </div>
+                        <img src="./images/29123476dc79db543f.webp" alt="">
+                        <div class="card-body">
+                            <h3>Lego Worlds</h3>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda deleniti aliquid possimus molestiae ipsum. Perspiciatis, placeat, aspernatur tempora reprehenderit omnis dolorum ipsum numquam ducimus quos voluptatibus magnam, fuga repudiandae cumque.</p>
+                            <del>R$400,00</del>
+                            <strong>R$100,00 a vista</strong>
+                            <button class="btn btn-primary" type="button">comprar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section data-bs-spy="scroll" data-bs-target="#cabecalho" id="contato">
+        <div class="container contato">
+            <h2>Contato</h2>
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="Name">Nome:</label>
+                    <input type="text">
+                </div>
+                <div class="form-group">
+                    <label for="E-mail">E-mail:</label>
+                    <input type="text">
+                </div>
+                <div class="form-group">
+                    <label for="Telefone">Telefone:</label>
+                    <input type="text">
+                </div>
+                <button type="button submit" class="btn btn-primary">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>&copy;Todos direitos reservados</footer>
+
+    <script src="./lib/bootstrap.bundle.min.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>
